@@ -21,6 +21,11 @@ The project is an online bug-tracking system for projects. The application allow
 -   Visual studio code/IntelliJ IDEA
 -   Google Chrome/Mozilla Firefox/Microsoft Edge
 -   Live Server extension in VS Code
+-   Jdk
+-   Maven for project management
+-   Apache Tomacat
+-   Dependencies like jackson , jakarta.servlets , junit
+-   JDBC for database connectivity and MySql
 
 ### Procedure
 
@@ -70,3 +75,45 @@ The entry point of the application is the **Bug Tracking System's main page**. A
 3. Once your files are loaded, right-click on the HTML file you want to run and select "Open with Live Server" or "Open in Browser" to launch it in your default web browser.
 
 4. Optionally you can have the Live Server extension installed for real-time updates. This allows you to see changes immediately as we edit our project.
+
+The **BACKEND** contains all the folders related to server side programming . The server side programming is done in java using APACHE TOMCAT web server , SERVLETS , JDBC , MAVEN for project management . 
+In the backend folder there is a folder named **Bug-Tracking-System** . In that folder , the whole backend code is there . In the backend main src folder there would be 6 sub folders mainly
+
+- Controller
+
+- Service
+
+- Dao
+
+- Dto
+
+- Models
+
+- Utils
+
+>**Controller** :
+This layer is responsible for handling request comming to end-points . This Layer contains different servlets which handles the request . When the incomming request commes to the APACHE TOMCAT web server it sees the end-point and then it sees that to which servelet this endpoint is mapped to and loads , initializes that servlet to handle request . For each of functionalities related to the roles like developer , tester and project manager , the servlets are created
+
+>**Service layer**
+All the business logic resides in this layer . The servlets call this layer for applying business logic .
+
+>**DAO(Data Access Objects) layer**
+This layer is actually communicating with our database for all CRUD related operations like CreatingProject , getting Project Details , assigning projects to developer(by pm) etc.
+
+>**DTO(Data Transfer Objects)**
+All the request which comes to API endpoints are in JSON fromat in the case of out project . This JSON needs to be converted into java object to be handled at different layers . So in this case DTO's comes for the rescue . Their is one example in our code where the userId and password is sent to the servlet as request in json . To handle the request first this json is converted to 'UserValidationRequestDto' java object , it is then sent to service layer. Service layer performs the check and it sends java object 'UserValidationResponseDto' back to controller . This conatains the userId,password , role and the list of projects to which the user is associated with and this object is converted back to json by controller and sent back as response .
+
+>**Models**
+These are java classes which defines the  data to be stored in our MySQL tables .
+
+>**Utils**
+This folder conatains the utility classes like custom exceptions etc.
+
+In order to **run the backend application** , 
+
+1. Create war packaging of the project (can be made using maven)
+2. Place the war file in the webapps folder of the tomcat
+3. start the tomcat server
+4. In our case the domain is local host so you have to make request to http://localhost:8080/<war-package-name>/<api endpoint defined> through postman . Incase of post request , you have to set request body as well
+
+Happy Running!
