@@ -101,19 +101,19 @@ All the business logic resides in this layer . The servlets call this layer for 
 This layer is actually communicating with our database for all CRUD related operations like CreatingProject , getting Project Details , assigning projects to developer(by pm) etc.
 
 >**DTO(Data Transfer Objects)**
-All the request which comes to API endpoints are in JSON fromat in the case of out project . This JSON needs to be converted into java object to be handled at different layers . So in this case DTO's comes for the rescue . Their is one example in our code where the userId and password is sent to the servlet as request in json . To handle the request first this json is converted to 'UserValidationRequestDto' java object , it is then sent to service layer. Service layer performs the check and it sends java object 'UserValidationResponseDto' back to controller . This conatains the userId,password , role and the list of projects to which the user is associated with and this object is converted back to json by controller and sent back as response .
+All the request which comes to API endpoints are in JSON format in the case of our project . This JSON needs to be converted into java object to be handled at different layers . So in this case DTO's comes for the rescue . There is one example in our code where the userId and password is sent to the servlet as request in json . To handle the request first this json is converted to 'UserValidationRequestDto' java object , it is then sent to service layer. Service layer performs the check and it sends java object 'UserValidationResponseDto' back to controller . This contains the userId, password , role and the list of projects to which the user is associated with and this object is converted back to json by controller and sent back as response .
 
 >**Models**
-These are java classes which defines the  data to be stored in our MySQL tables .
+These are java classes which defines the data to be stored in our MySQL tables .
 
 >**Utils**
-This folder conatains the utility classes like custom exceptions etc.
+This folder contains the utility classes like custom exceptions etc.
 
 In order to **run the backend application** , 
 
 1. Create war packaging of the project (can be made using maven)
 2. Place the war file in the webapps folder of the tomcat
-3. start the tomcat server
+3. Start the tomcat server
 4. In our case the domain is local host so you have to make request to http://localhost:8080/war-package-name/api-endpoint-defined through postman . Incase of post request , you have to set request body as well
 
 Happy Running!
