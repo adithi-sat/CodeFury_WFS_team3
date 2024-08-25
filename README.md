@@ -114,6 +114,6 @@ In order to **run the backend application** ,
 1. Create war packaging of the project (can be made using maven)
 2. Place the war file in the webapps folder of the tomcat
 3. start the tomcat server
-4. In our case the domain is local host so you have to make request to http://localhost:8080/<war-package-name>/<api endpoint defined> through postman . Incase of post request , you have to set request body as well
+4. In our case the domain is local host so you have to make request to http://localhost:8080/war-package-name/api-endpoint-defined through postman . Incase of post request , you have to set request body as well
 
 Happy Running!
