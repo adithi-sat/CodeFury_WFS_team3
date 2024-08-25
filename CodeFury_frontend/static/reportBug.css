@@ -1,0 +1,16 @@
+        /* Center the form and set a max width */
+    .form-container {
+        max-width: 600px; 
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f8f9fa; /* Light background for better readability */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    body {           
+        background-image: linear-gradient(rgba(0, 150, 136,0.7), rgba(158, 236, 192,0.7)),url('../images/MainPageImg.jpg');
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Nunito';
+    }

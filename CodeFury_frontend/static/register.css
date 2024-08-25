@@ -1,0 +1,64 @@
+body{
+    width: 100vw;
+    background-image: linear-gradient(to right, #009688, #9eecc0);
+    overflow: hidden;
+}
+#profile{
+    width: 25%;
+    border-radius: 2px;
+    border: solid white 2px;
+}
+#registerForm{
+    display: flex;
+    flex-direction: column;
+}
+
+#registerForm{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 65%;
+    justify-content: space-around;
+}
+#registerDiv{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: "Nunito";
+    font-weight: 680;
+    height: 80%;
+    left: 55%;
+    position: absolute;
+    /* transform: translate(-50%,0); */
+    top: 10%;
+    width: 40%;
+}
+.error{
+    color: white;
+    font-size: 2vh;
+}
+footer{
+    align-items: center;
+    bottom: 0%;
+    display: flex;
+    flex-direction: row;
+    height: 8%;  
+    justify-content: center;  
+    position: absolute;    
+    width: 100vw;
+}
+#submitButton{
+    background: #90e493;
+}
+#mainContainer{
+    display:flex;
+    flex-direction: row;
+    height: 80vh;
+}
+.navbar,.nav-link {
+    font-family: 'Poppins', sans-serif;
+}
+.navbar-brand{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}

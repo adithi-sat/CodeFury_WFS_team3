@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKIRA</title>
+    <link rel="stylesheet" href="D:\CodeFury_frontend\static\MainPage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <section class="main">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a class="akira-left">AKIRA</li>
+                    <li><a class="active" href="D:\CodeFury_frontend\templates\BugTrackingMain.html">HOME</a></li>
+                    <li><a href="../templates/about.html">Features</a></li>
+                    <li><a href="D:\CodeFury_frontend\templates\login.html">LOGIN/REGISTER</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1> WELCOME TO AKIRA </h1>
+            <p>Fix Faster, Deliver Better</p>
+            <a href="#" class="hero-btn">Click Here To Know More</a>
+        </div>
+    </section>
+    <footer>
+        <span id="footerSpan">&copy; AKIRA 2024 All rights reserved.</span>
+      </footer>
+   
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

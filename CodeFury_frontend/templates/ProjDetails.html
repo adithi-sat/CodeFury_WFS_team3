@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/ProjDetails.css">
+    
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-transparant">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">AKIRA</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active text-dark active" aria-current="page" href="BugTrackingMain.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="../templates/about.html">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" id="downloadUsers">Import Users</a>
+              </li>
+              <li class="nav-item">
+                <button onclick="signOut()" class="btn btn-signout">Sign Out</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+<div class="container">
+    <h1 class="text-center">Project Details</h1>
+    <div id="projectInfo" class="project-details"></div>
+
+    <div id="bugList" class="bug-list">
+        <h4>List of Bugs</h4>
+        <ul class="list-group" id="bugs"></ul>
+    </div>
+</div>
+
+<footer>
+    <span>&copy; AKIRA 2024 All rights reserved.</span>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.5.2.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="../scripts/ProjDetails.js"></script>
+<script src="../scripts/users.js"></script>
+</body>
+</html>

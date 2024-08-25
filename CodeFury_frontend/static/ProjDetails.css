@@ -1,0 +1,84 @@
+
+        body {
+            background-image: linear-gradient(rgba(0, 150, 136,0.7), rgba(158, 236, 192,0.7)),url('../images/MainPageImg.jpg');
+        background-size: cover; 
+        background-position: center; 
+        font-family: 'Nunito';
+        padding: 20px;
+        }
+    .container {
+        margin-top: 30px;
+        border-radius: 10px;
+        background-color: #e9e3e3; 
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+    h1 {
+        color: #28a745;
+        margin-bottom: 20px;
+    }
+    .project-details {
+        margin-bottom: 30px;
+        padding: 15px;
+        border: 1px solid #28a745;
+        border-radius: 8px;
+        background-color: #e9f7ef; 
+    }
+    .bug-list {
+        margin-top: 20px;
+    }
+    .list-group-item {
+        background-color: #ffffff; 
+        border: 1px solid #ced4da; 
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    .list-group-item strong {
+        color: #28a745; 
+    }
+    footer {
+        margin-top: 30px;
+        text-align: center;
+        color: #121111;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .brand {
+        font-size: 24px;
+        font-weight: bold;
+        color: #171a17;
+    }
+    .nav-buttons {
+        display: flex;
+        gap: 10px;
+    }
+    .btn-nav {
+        /* background-color: #6df57d; */
+        font-size: 20px;
+        color: rgb(14, 13, 13);
+        border-radius: 5px;
+    }
+    .btn-nav:hover {
+        background-color: #34d66d;
+    }
+    .btn-signout {
+        /* background-color: #34d66d;  */
+        color: rgb(33, 30, 30);
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    .btn-signout:hover {
+        background-color: #c82333;
+    }
+    .navbar,.nav-link {
+        font-family: 'Poppins', sans-serif;
+    }
+    .navbar-brand{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 800;
+        color: black;
+    }

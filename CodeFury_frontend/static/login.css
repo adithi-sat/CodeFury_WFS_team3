@@ -1,0 +1,70 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to right, #009688, #9eecc0);
+    overflow: hidden;
+    background-image: linear-gradient(rgba(0, 150, 136,0.7), rgba(158, 236, 192,0.7)),url('../images/MainPageImg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+#profile{
+    width: 30%;
+    border-radius: 2px;
+    border: solid white 2px;
+}
+#loginDiv{    
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: "Nunito";
+    font-weight: 680;
+    height: 65%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,0);
+    top: 28%;
+    width: 40%;
+    
+}
+
+#loginForm{
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    justify-content: space-around;
+}
+footer{
+    align-items: center;
+    bottom: 0%;
+    display: flex;
+    flex-direction: row;
+    height: 8%;  
+    justify-content: center;  
+    position: absolute;    
+    width: 100vw;
+}
+h3{
+    font-family: monospace;
+    font-size: 1.85vw;
+    font-weight: 800;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 12%;
+}
+small{
+    color: #1E201E;
+}
+.errorMessage{
+    color: white;
+    font-size: 2vh;
+}
+.navbar,.nav-link {
+    font-family: 'Poppins', sans-serif;
+}
+.navbar-brand{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+

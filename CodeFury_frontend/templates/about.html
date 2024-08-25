@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - Bug Tracking System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body{
+        width: 100vw;
+        background-image: linear-gradient(to right, #009688, #9eecc0);
+        /* overflow: hidden; */
+        background-image: linear-gradient(rgba(0, 150, 136,0.7), rgba(158, 236, 192,0.7)),url('../images/MainPageImg.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+        .container {
+            margin-top: 50px;
+            max-width: 900px;
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #17a2b8;
+            margin-bottom: 20px;
+        }
+        .role-section {
+            margin-bottom: 30px;
+        }
+        .role-section h3 {
+            color: #343a40;
+        }
+        .role-section p {
+            color: #6c757d;
+        }
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            color: #6c757d;
+        }
+        .navbar,.nav-link {
+            font-family: 'Poppins', sans-serif;
+        }
+        .navbar-brand{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-transperant">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">AKIRA</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active text-dark active" aria-current="page" href="BugTrackingMain.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Features</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h2>Features of the Bug Tracking System</h2>
+
+        <div class="role-section">
+            <h3>Role: Project Manager</h3>
+            <p>As a Project Manager, you have the following capabilities:</p>
+            <ul>
+                <li>Oversee all active projects and monitor their progress.</li>
+                <li>Assign tasks to developers and testers based on project requirements.</li>
+                <li>Set project deadlines and track team performance.</li>
+                <li>Generate and view comprehensive project reports.</li>
+                <li>Manage team members and their roles within the project.</li>
+            </ul>
+        </div>
+
+        <div class="role-section">
+            <h3>Role: Developer</h3>
+            <p>As a Developer, your responsibilities include:</p>
+            <ul>
+                <li>View and update tasks assigned by the Project Manager.</li>
+                <li>Submit bug fixes and update the status of the bug accordingly.</li>
+                <li>Collaborate with other developers and testers to ensure smooth project progress.</li>
+                <li>Access detailed bug reports to understand the issues.</li>
+                <li>Track the progress of bugs you've worked on.</li>
+            </ul>
+        </div>
+
+        <div class="role-section">
+            <h3>Role: Tester</h3>
+            <p>As a Tester, your duties include:</p>
+            <ul>
+                <li>Report bugs and issues discovered during testing.</li>
+                <li>Reproduce bugs and verify bug fixes submitted by developers.</li>
+                <li>Work closely with developers to clarify bug details and expectations.</li>
+                <li>Prioritize bugs based on their severity and impact on the project.</li>
+                <li>Generate and view test case reports to ensure coverage.</li>
+            </ul>
+        </div>
+
+        <div class="role-section">
+            <h3>Additional Features</h3>
+            <ul>
+                <li><strong>Real-Time Notifications:</strong> Get instant updates on project changes, bug assignments, and status updates.</li>
+                <li><strong>Advanced Search:</strong> Easily find bugs, tasks, and projects using filters and keywords.</li>
+                <li><strong>Customizable Dashboard:</strong> Tailor your dashboard to display the information most relevant to your role.</li>
+                <li><strong>Role-Based Access Control:</strong> Ensure that users only have access to the features and data relevant to their role.</li>
+                <li><strong>Analytics and Reporting:</strong> Generate detailed reports on project performance, team productivity, and bug trends.</li>
+            </ul>
+        </div>
+        
+        <footer>
+            &copy; AKIRA 2024 All rights reserved.
+        </footer>
+    </div>
+
+</body>
+</html>

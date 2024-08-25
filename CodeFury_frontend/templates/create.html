@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Project</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/create.css">
+</head>
+<body>
+    <nav>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">AKIRA</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active text-dark active" aria-current="page" href="login.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" id="downloadUsers">Import Users</a>
+              </li>
+              <li class="nav-item">
+                <button onclick="signOut()" class="btn btn-signout">Sign Out</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav> 
+
+    <div class="container">
+        <h1>Create New Project</h1>
+        <form id="create-project-form">
+            <div class="form-group">
+                <label for="prid">Project ID (PR ID):</label>
+                <input type="text" class="form-control" id="prid" name="prid" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Project Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="manager">Manager:</label>
+                <input type="text" class="form-control" id="manager" name="manager">
+            </div>
+            <div class="form-group">
+                <label for="startdate">Start Date:</label>
+                <input type="date" class="form-control" id="startdate" name="startdate" required>
+            </div>
+            <div class="form-group">
+                <label for="team">Team:</label>
+                <input type="text" class="form-control" id="team" name="team" required>
+            </div>
+            <div class="form-group">
+                <label for="dev">Developer ID:</label>
+                <select class="form-control" id="dev" name="dev" required>
+                    <option value="">Select Developer</option>
+                    <option value="dev1">DEV 16-Abhishek</option>
+                    <option value="dev2">DEV 18-Twesha</option>
+                    <option value="dev3">DEV 23-Mahesh</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="tester">Tester ID:</label>
+                <select class="form-control" id="tester" name="tester" required>
+                    <option value="">Select Tester</option>
+                    <option value="tester1">TEST12 - Aman</option>
+                    <option value="tester2">TEST13 - Saketh</option>
+                    <option value="tester3">TEST56 - Hari</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="status">Status:</label>
+                <input type="text" id="status">
+            </div>
+            <button type="submit" class="submit-btn">Create Project</button>
+        </form>
+    </div>
+    
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="../scripts/create.js"></script>
+<script src="../scripts/users.js"></script>
+</body>
+</html>
